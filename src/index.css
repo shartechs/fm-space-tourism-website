@@ -16,3 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
+.navlink {
+  @apply font-barlow text-nav-mobile lg:text-nav-desktop  tracking-[2.7px] text-white;
+}
