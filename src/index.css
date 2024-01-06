@@ -6,13 +6,13 @@
 /* Fonts */
 @font-face {
   font-family: "Barlow Condensed";
-  src: url("/assets/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+  src: url("/src/assets/fonts/BarlowCondensed-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Bellefair";
-  src: url("/assets/fonts/Bellefair-Regular.ttf") format("truetype");
+  src: url("/src/assets/fonts/Bellefair-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
