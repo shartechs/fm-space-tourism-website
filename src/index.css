@@ -20,3 +20,7 @@
 .navlink {
   @apply font-barlow text-nav-mobile lg:text-nav-desktop  tracking-[2.7px] text-white;
 }
+
+p {
+  @apply font-barlow text-sm md:text-md xl:text-xl;
+}

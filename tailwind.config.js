@@ -10,7 +10,7 @@ export default {
     },
     fontFamily: {
       barlow: ["Barlow Condensed", "sans-serif"], // Primary sans-serif font
-      bellafair: ["Bellafair", "sans-serif"], // Secondary sans-serif font
+      bellefair: ["Bellefair", "serif"], // Secondary sans-serif font
     },
     extend: {
       screens: {
