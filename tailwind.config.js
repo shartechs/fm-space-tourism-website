@@ -8,6 +8,16 @@ export default {
       "white": "#FFFFFF",
       "grey": "#979797",
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        sm: "2rem",
+        lg: "4rem",
+        xl: "5rem",
+        "2xl": "6rem",
+      },
+    },
     fontFamily: {
       barlow: ["Barlow Condensed", "sans-serif"], // Primary sans-serif font
       bellefair: ["Bellefair", "serif"], // Secondary sans-serif font

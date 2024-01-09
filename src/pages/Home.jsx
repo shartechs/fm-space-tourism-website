@@ -5,8 +5,8 @@ function Home() {
     <Layout
       backgroundImageUrl={"src/assets/images/home/background-home-desktop.jpg"}
     >
-      <div className="flex justify-between items-center">
-        <div>
+      <div className=" mt-[250px] flex justify-between container">
+        <div className="flex flex-col w-[450px]">
           <h5 className="text-white font-barlow text-h5-mobile md:text-h5-tablet lg:text-h5-desktop">
             SO, YOU WANT TO TRAVEL TO
           </h5>
@@ -20,8 +20,9 @@ function Home() {
             world experience!
           </p>
         </div>
-        <div>
-          <button className="  bg-white text-[20px] md:text-[32px] py-[100px] px-[100px] font-bellefair rounded-full">
+
+        <div className="flex items-end">
+          <button className="  bg-white text-[20px] md:text-[32px] py-[80px] px-[40px] font-bellefair rounded-full hover:ring-[50px] hover:ring-[#979797] duration-500">
             EXPLORE
           </button>
         </div>
