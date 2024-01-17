@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import { Outlet } from "react-router-dom";
 
 function Home() {
   return (
@@ -27,6 +28,7 @@ function Home() {
           </button>
         </div>
       </div>
+      <Outlet />
     </Layout>
   );
 }
