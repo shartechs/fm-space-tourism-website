@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import Navlink from "./NavLink";
 
 function Navigation() {
   return (
@@ -7,25 +7,15 @@ function Navigation() {
         <img src="src/assets/svgs/logo.svg" alt="logo" />
       </div>
       <ul className="flex gap-4 bg-opacity-[4%] backdrop-blur-[60px] shrink-0 justify-center content-center px-[50px] py-[25px] w-[60%]">
-        <li className="navlink">
-          <NavLink
-            to="/"
-            className={({ isActive }) =>
-              isActive ? "navlink active" : "navlink"
-            }
-          >
+        <li>
+          <Navlink to="/">
             <span>01</span> Home
-          </NavLink>
+          </Navlink>
         </li>
-        <li className="navlink">
-          <NavLink
-            to="/destination"
-            className={({ isActive }) =>
-              isActive ? "navlink active" : "navlink"
-            }
-          >
+        <li>
+          <Navlink to="/destination">
             <span>02</span> Destination
-          </NavLink>
+          </Navlink>
         </li>
         <li className="navlink">Crew</li>
         <li className="navlink">Technology</li>
