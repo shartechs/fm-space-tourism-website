@@ -25,6 +25,10 @@
 
 .navlink {
   @apply font-barlow text-nav-mobile lg:text-nav-desktop  tracking-[2.7px] text-white uppercase;
+
+  span {
+    font-weight: bold;
+  }
 }
 
 .active {
