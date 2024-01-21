@@ -2,11 +2,15 @@ import Navlink from "./NavLink";
 import useScreenSize from "../../hooks/useScreenSize";
 import MobileNavigation from "./MobileNavigation";
 import IconHamburger from "../../assets/svgs/IconHamburger";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Navigation() {
   const screenSize = useScreenSize();
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    if (screenSize.width > 768) setIsOpen(false);
+  }, [screenSize]);
   console.log(screenSize);
   return (
     <>
