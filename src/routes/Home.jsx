@@ -3,9 +3,7 @@ import { Outlet } from "react-router-dom";
 
 function Home() {
   return (
-    <Layout
-      backgroundImageUrl={"src/assets/images/home/background-home-desktop.jpg"}
-    >
+    <Layout backgroundImageUrl="src/assets/images/home/background-home-desktop.jpg">
       <div className=" mt-[250px] flex justify-between container">
         <div className="flex flex-col w-[450px]">
           <h5 className="text-white font-barlow text-h5-mobile md:text-h5-tablet lg:text-h5-desktop">
