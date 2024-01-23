@@ -2,6 +2,7 @@ import Navlink from "./NavLink";
 import useScreenSize from "../../hooks/useScreenSize";
 import MobileNavigation from "./MobileNavigation";
 import IconHamburger from "../../assets/svgs/IconHamburger";
+import Logo from "../../assets/svgs/Logo";
 import { useEffect, useState } from "react";
 
 function Navigation() {
@@ -17,11 +18,7 @@ function Navigation() {
       <nav className="flex justify-between">
         <div className="md:pt-5 xl:pt-0">
           <Navlink to="/">
-            <img
-              className="w-[40px] h-[40px]"
-              src="src/assets/svgs/logo.svg"
-              alt="logo"
-            />
+            <Logo className="w-[40px] h-[40px]" />
           </Navlink>
         </div>
         {screenSize.width > 768 ? (
