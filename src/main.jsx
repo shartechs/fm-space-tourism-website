@@ -4,6 +4,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./routes/Home";
 import Destination from "./routes/Destination";
+import Crew from "./routes/Crew";
+import Technology from "./routes/Technology";
 
 const router = createBrowserRouter([
   {
@@ -13,6 +15,14 @@ const router = createBrowserRouter([
   {
     path: "destination",
     element: <Destination />,
+  },
+  {
+    path: "crew",
+    element: <Crew />,
+  },
+  {
+    path: "technology",
+    element: <Technology />,
   },
 ]);
 
