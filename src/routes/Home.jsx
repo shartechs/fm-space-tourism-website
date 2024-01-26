@@ -1,9 +1,15 @@
 import Layout from "../components/Layout";
 import { Outlet } from "react-router-dom";
 
+const backgroundImages = {
+  mobile: "src/assets/images/home/background-home-mobile.jpg",
+  tablet: "src/assets/images/home/background-home-tablet.jpg",
+  desktop: "src/assets/images/home/background-home-desktop.jpg",
+};
+
 function Home() {
   return (
-    <Layout backgroundImageUrl="src/assets/images/home/background-home-desktop.jpg">
+    <Layout backgroundImageUrl={backgroundImages}>
       <div className=" mt-[250px] flex justify-between container">
         <div className="flex flex-col w-[450px]">
           <h5 className="text-white font-barlow text-h5-mobile md:text-h5-tablet lg:text-h5-desktop">
