@@ -1,4 +1,5 @@
 import Navlink from "./NavLink";
+import { Link } from "react-router-dom";
 import useScreenSize from "../../hooks/useScreenSize";
 import MobileNavigation from "./MobileNavigation";
 import IconHamburger from "../../assets/svgs/IconHamburger";
@@ -15,14 +16,14 @@ function Navigation() {
   console.log(screenSize);
   return (
     <>
-      <nav className="flex justify-between">
-        <div className="md:pt-5 xl:pt-0">
-          <Navlink to="/">
+      <nav className="flex justify-between items-center">
+        <div>
+          <Link to="/">
             <Logo className="w-[40px] h-[40px]" />
-          </Navlink>
+          </Link>
         </div>
         {screenSize.width > 768 ? (
-          <ul className="flex gap-4 bg-opacity-[4%] backdrop-blur-[60px] shrink-0 justify-center content-center px-[50px] py-[25px] w-[70%]">
+          <ul className="flex md:gap-8 gap-0 bg-opacity-[4%] backdrop-blur-[60px] shrink-0 justify-center content-center px-[50px] w-[60%] before:hidden xl:before:block before:absolute before:h-[1px] before:w-[50%] before:bg-[#979797] before:left-[-390px] before:top-[50%] ">
             <li>
               <Navlink to="/">
                 <span>00</span> Home

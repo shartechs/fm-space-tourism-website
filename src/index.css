@@ -24,10 +24,10 @@
 }
 
 .navlink {
-  @apply font-barlow text-nav-mobile lg:text-nav-desktop  tracking-[2.7px] text-white uppercase;
+  @apply font-barlow text-nav-mobile lg:text-nav-desktop  tracking-[2.7px] text-white uppercase md:py-[25px] py-[5px] border-b-[3px] border-[transparent]  hover:border-b-[3px] hover:border-white inline-block w-fit;
 
   span {
-    font-weight: bold;
+    @apply font-bold md:hidden xl:inline-block;
   }
 }
 
