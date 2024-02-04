@@ -13,7 +13,7 @@ function Navigation() {
   useEffect(() => {
     if (screenSize.width > 768) setIsOpen(false);
   }, [screenSize]);
-  console.log(screenSize);
+
   return (
     <>
       <nav className="flex justify-between items-center">
